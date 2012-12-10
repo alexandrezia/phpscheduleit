@@ -49,8 +49,8 @@ class Pages
 	private static $_pages = array(
 		1 => array('url' => Pages::DASHBOARD, 'name' => 'MyDashboard'),
 		2 => array('url' => Pages::SCHEDULE, 'name' => 'Schedule'),
-		3 => array('url' => Pages::MY_CALENDAR, 'name' => 'MyCalendar'),
-		4 => array('url' => Pages::CALENDAR, 'name' => 'ResourceCalendar')
+//		3 => array('url' => Pages::MY_CALENDAR, 'name' => 'MyCalendar'),
+//		4 => array('url' => Pages::CALENDAR, 'name' => 'ResourceCalendar')
 	);
 
 	private function __construct()

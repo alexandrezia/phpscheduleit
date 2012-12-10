@@ -177,10 +177,12 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 			</li>
 			{/if}
 			{/if}
+<!--			
 				<li class="menubaritem"><a href="{$Path}help.php">{translate key=Help}</a><ul>
 					<li><a href="{$Path}help.php?ht=admin">{translate key=Administration}</a></li>
 					<li><a href="{$Path}help.php?ht=about">{translate key=About}</a></li>
 				</ul></li>
+-->				
 			</ul>
 			<!-- end #nav -->
 		</div>
