@@ -58,7 +58,9 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 			{textbox type="password" name="PASSWORD_CONFIRM" class="input" value="" size="20"}
 			</label>
 		</p>
-
+		
+		<input type="hidden" {formname key=DEFAULT_HOMEPAGE} value="1"/>
+<!--
 		<p>
 			<label class="reg">{translate key="DefaultPage"}<br/>
 				<select {formname key='DEFAULT_HOMEPAGE'} class="input">
@@ -66,7 +68,7 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 				</select>
 			</label>
 		</p>
-
+-->
 		<div class="registrationHeader"><h3>{translate key=Profile} ({translate key=AllFieldsAreRequired})</h3></div>
 		<p>
 			<label class="reg">{translate key="FirstName"}<br/>
