@@ -1,0 +1,135 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+		"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<title>phpScheduleIt 2.2 Readme</title>
+</head>
+<body>
+<h1>Welcome to phpScheduleIt 2.2!</h1>
+
+<h2>Prerequisites</h2>
+<ul>
+	<li>PHP 5.2 or greater (5.3 + recommended)</li>
+	<li>MySQL 5.0 or greater</li>
+	<li>Web server (Apache, IIS)</li>
+	<li>OS - Windows, Mac, Unix</li>
+</ul>
+
+<h2>Installation instructions</h2>
+<a href="readme_installation.html">Full install instructions</a><br/>
+<a href="readme_installation.html#upgrading">Upgrading</a>
+
+<h2>General Application Help</h2>
+phpScheduleIt application help is available from the Help menu item.
+
+<h2>Release Notes</h2>
+
+<h4>2.3</h4>
+<ul>
+	<li>Added ability for administrators of all levels to create reports</li>
+	<li>Added ability to create a reservation from the schedule and resource calendar views</li>
+	<li>Added ability to create recurring blackout dates</li>
+	<li>Added schedule admin role</li>
+	<li>Added setting to disable recurring reservations for non-admins</li>
+	<li>Added setting to automatically subscribe users to all emails</li>
+	<li>Added setting to prevent reservation invitations and participation</li>
+	<li>Added setting to load jQuery from CDN</li>
+	<li>Added setting to return reservation to pending when updated</li>
+	<li>Added Swedish translation</li>
+	<li>Added full resource and accessory list to reservation emails</li>
+	<li>Added ability to set resource order</li>
+	<li>Added email address to user autocomplete</li>
+	<li>Numerous minor enhancements added and defects fixed</li>
+</ul>
+
+<h4>2.2</h4>
+<ul>
+	<li>Breaking change: For Active Directory authentication, please set your authentication plugin to ActiveDirectory. Ldap plugin is now targeted at non-Active Directory.</li>
+	<li>Added ability to create custom attributes</li>
+	<li>Rewrote CAPTCHA functionality</li>
+	<li>Added account activation emails</li>
+	<li>Added ability to upload reservation attachments</li>
+	<li>Made post-registration action pluggable</li>
+	<li>Added Saml SSO Authentication plugin</li>
+	<li>Made configuring resource image directories easier</li>
+	<li>Added ability to start schedules on Today</li>
+	<li>Numerous minor enhancements added and defects fixed</li>
+</ul>
+
+<h4>2.1</h4>
+<ul>
+	<li>Added resource administrator role</li>
+	<li>Added configurable ability for application admins, resource admins and group admins to recieve reservation activity emails</li>
+	<li>Added configuration options for user name formatting, resource editing rules, privacy settings and CSS extension file</li>
+	<li>Added ability to subscribe to schedule, resource and personal calendars</li>
+	<li>Added option for owner to receive emails when reservations are deleted</li>
+	<li>Added participant email notifications when reservations are deleted</li>
+	<li>Added ability use full HTML in announcements and resource descriptions/notes</li>
+	<li>Many bug fixes, including: reservation approval, reservation admin delete, resource configuration, admin user creation, group user management, registration CAPTCHA</li>
+	<li>Added Dutch, Spanish, Italian, Japanese, Polish, Catalan languages</li>
+</ul>
+
+<h4>2.0.2</h4>
+<ul>
+	<li>Fix and additional logging for migration</li>
+	<li>Minor UI cleanup of validation group error div</li>
+	<li>Fixed defect with captcha</li>
+	<li>Fixed defect not translating full day names properly when using date formatting</li>
+	<li>Fixed some IE7 display problems</li>
+	<li>Updated install instructions to be more clear for cPanel users</li>
+	<li>Dashboard now shows upcoming reservations for owned/invited/participating</li>
+	<li>Fixed defect on quotas which was not working for non English</li>
+	<li>Fixed defect where accessories with unlimited quantities were being rejected</li>
+	<li>Fixed defect on manage blackouts</li>
+	<li>Added pre-reservation plugin example</li>
+	<li>Ajax reservation now displays errors</li>
+	<li>Fixed defect selecting first period instead of last period when reservation ends at start time of first period </li>
+	<li>Fixed defect displaying reservation on first period of the day if it ends at the first period's start time</li>
+	<li>Fixed bug adding users from the admin tool</li>
+	<li>Fixed javascript single quote bugs</li>
+</ul>
+
+<h4>2.0.1</h4>
+<ul>
+	<li>Perfomance improvements on bookings page</li>
+	<li>Added Spanish and Dutch translations</li>
+	<li>Added ability to view reservation details from view schedule page</li>
+	<li>Fixed defect loading translated emails</li>
+	<li>Fixed defect approving reservations</li>
+	<li>Fixed defects when using IE</li>
+	<li>Fixed defect showing an error during log out when using LDAP</li>
+</ul>
+
+<h4>2.0</h4>
+<ul>
+	<li>Fully rewritten from scratch with a focus on testability, extensibility and maintainability</li>
+	<li>All new, more intuitive and friendly user interface</li>
+	<li>Pluggable authentication, authorization, permissions, pre/post reservation actions</li>
+	<li>Ability to reserve multiple resources at one time</li>
+	<li>Flexible layout configuration and time slot labeling</li>
+	<li>Quotas</li>
+	<li>Roles</li>
+	<li>Better Microsoft Outlook integration</li>
+	<li>Easier installation process</li>
+</ul>
+
+<h2>Road Map - 2.3</h2>
+<ul>
+	<li><h4>Planned Features</h4>
+		<ul>
+			<li>Reporting and statistics</li>
+			<li>Recurring blackout times</li>
+			<li>More features depending on timing and community needs</li>
+		</ul>
+	<li><h4>Planned Enhancements</h4>
+		<ul>
+			<li>Enhanced privacy controls</li>
+			<li>More plugin points</li>
+			<li>Minor bugfixes</li>
+			<li>More enhancements depending on timing and community needs</li>
+		</ul>
+	</li>
+</ul>
+
+</body>
+</html>
