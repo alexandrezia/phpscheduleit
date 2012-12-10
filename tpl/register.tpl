@@ -88,6 +88,8 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 			</label>
 		</p>
 
+<input type="hidden" {formname key=TIMEZONE} value="America/Sao_Paulo"/>
+<!--
 		<p>
 			<label class="reg">{translate key="Timezone"}<br/>
 				<select {formname key='TIMEZONE'} class="input" id="timezoneDropDown">
@@ -95,6 +97,7 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 				</select>
 			</label>
 		</p>
+-->
 
 		<p style="display:none">
 			<label class="reg">{translate key="Language"}<br/>
