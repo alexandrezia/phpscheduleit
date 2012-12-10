@@ -434,6 +434,14 @@ class PeriodList
 		if (!$period->IsReservable())
 		{
 			//TODO: Config option to hide non-reservable periods
+
+        // quando criando timeslots nao pode dar return
+
+        // quando existe horario nao reservavel setado, nao pode dar return, e é preciso ajustar o tamanho do slot nao reservavel para o tamanho dos slots visiveis
+
+        // quando está montando a agenta, na tela de agendamentos, pode dar return
+
+//        return;
 		}
 
         if ($this->AlreadyAdded($period->BeginDate(), $period->EndDate()))
