@@ -67,10 +67,10 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 {block name="schedule_control"}
 <div>
 	<div class="schedule_title">
-	<span>{$ScheduleName}</span>
+
 	{if $Schedules|@count gt 0}
 	<ul class="schedule_drop">
-		<li id="show_schedule">{html_image src="down_sm_blue.png" alt="Change Schedule"}</li>
+		<li id="show_schedule"><span>{$ScheduleName}</span>{html_image src="down_sm_blue.png" alt="Change Schedule"}</li>
 		<ul style="display:none;" id="schedule_list">
 		{foreach from=$Schedules item=schedule}
 			<li><a href="#" onclick="ChangeSchedule({$schedule->GetId()}); return false;">{$schedule->GetName()}</a></li>
@@ -78,6 +78,7 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 		</ul>
 	</ul>
 	{/if}
+	
 	<a href="#" id="calendar_toggle">
 		{html_image src="calendar.png" altKey="ShowHideNavigation"}
 	</a>
