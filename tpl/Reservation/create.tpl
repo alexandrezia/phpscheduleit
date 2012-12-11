@@ -51,17 +51,19 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 			<li class="inline">
 				<div>
 					<div style="float:left;">
-						<label>{translate key="ResourceList"}</label><br/>
-
+						<label>{translate key="ResourceList"}</label>
+						
 						<div id="resourceNames" style="display:inline">
 							<a href="#" class="resourceDetails">{$ResourceName}</a>
 							<input class="resourceId" type="hidden" {formname key=RESOURCE_ID} value="{$ResourceId}"/>
 							<input type="hidden" {formname key=SCHEDULE_ID} value="{$ScheduleId}"/>
 						</div>
+{*
 					{if $ShowAdditionalResources}
 						<a href="#"
 						   onclick="$('#dialogAddResources').dialog('open'); return false;">({translate key=MoreResources})</a>
 					{/if}
+*}					
 						<div id="additionalResources"></div>
 					</div>
 					<div style="float:right;">

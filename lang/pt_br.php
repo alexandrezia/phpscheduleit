@@ -212,7 +212,7 @@ class pt_br extends Language
         $strings['NotSignedIn'] = 'Você não está logado';
         $strings['ReservationTitle'] = 'Título da reserva';
         $strings['ReservationDescription'] = 'Descrição da reserva';
-        $strings['ResourceList'] = 'Recursos a serem reservados';
+        $strings['ResourceList'] = 'Recursos a serem reservados:';
         $strings['Accessories'] = 'Acessórios';
         $strings['Add'] = 'Adicionar';
         $strings['ParticipantList'] = 'Participantes';
