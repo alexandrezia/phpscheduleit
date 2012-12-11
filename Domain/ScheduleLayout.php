@@ -198,13 +198,14 @@ class ScheduleLayout implements IScheduleLayout, ILayoutCreation
                 }
             }
 
-			if ($periodStart->LessThan($layoutDate) && $periodEnd->DateEquals($layoutDate) && $periodEnd->IsMidnight())
-			{
-				$periodStart = $periodStart->AddDays(1);
-				$periodEnd = $periodEnd->AddDays(1);
-			}
+            if ($periodStart->LessThan($layoutDate) && $periodEnd->DateEquals($layoutDate) && $periodEnd->IsMidnight())
+            {
+              $periodStart = $periodStart->AddDays(1);
+              $periodEnd = $periodEnd->AddDays(1);
+            }
 
-            $list->Add($this->BuildPeriod($periodType, $periodStart, $periodEnd, $label, $labelEnd));
+            $zPeriod = $this->BuildPeriod($periodType, $periodStart, $periodEnd, $label, $labelEnd);
+            $list->Add( $zPeriod );
         }
 
         $layout = $list->GetItems();
@@ -431,18 +432,22 @@ class PeriodList
 
     public function Add(SchedulePeriod $period)
     {
-		if (!$period->IsReservable())
-		{
-			//TODO: Config option to hide non-reservable periods
+      if (!$period->IsReservable())
+      {
+        //TODO: Config option to hide non-reservable periods
 
-        // quando criando timeslots nao pode dar return
+        // do not add unreservable slots only in schedule page,
+        // but when in manage_schedules page we need to add unreservable slots
+        if ( basename($_SERVER['SCRIPT_FILENAME']) == 'schedule.php' )
+        {
+          return;
+        }
 
-        // quando existe horario nao reservavel setado, nao pode dar return, e é preciso ajustar o tamanho do slot nao reservavel para o tamanho dos slots visiveis
+        // quando existe horario nao reservavel setado
+        // nao pode dar return,
+        // e é preciso ajustar o tamanho do slot nao reservavel para o tamanho dos slots visiveis
 
-        // quando está montando a agenta, na tela de agendamentos, pode dar return
-
-//        return;
-		}
+      }
 
         if ($this->AlreadyAdded($period->BeginDate(), $period->EndDate()))
         {
