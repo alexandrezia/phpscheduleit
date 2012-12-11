@@ -1,1 +1,6 @@
 *.DS_Store
+config/config.php
+config/log4php.config.xml
+logs/log_*.log
+logs/sql_log_*.log
+tpl_c/*.php
