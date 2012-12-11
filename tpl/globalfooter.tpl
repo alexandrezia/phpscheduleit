@@ -21,8 +21,9 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 	<div class="push">&nbsp;</div>
 	</div><!-- close wrapper-->
 
-    	<div class="page-footer">
+{*    	<div class="page-footer">
 			&copy; 2012 phpScheduleIt <br/><a href="http://phpscheduleit.sourceforge.net">phpScheduleIt v{$Version}</a>
     	</div>
+*}    	
 	</body>
 </html>

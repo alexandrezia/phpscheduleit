@@ -42,13 +42,16 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 			</p>
 			{/if}
 
+
+<input type="hidden" {formname key=LANGUAGE} value="pt_br"/>
+{*
 			<p>
 				<label class="login">{translate key='Language'}<br/>
 					<select {formname key='LANGUAGE'} class="input-small" id="languageDropDown">
 					{object_html_options options=$Languages key='GetLanguageCode' label='GetDisplayName' selected=$SelectedLanguage}
 					</select>
 			</p>
-
+*}
 			{if $ShowPersistLoginPrompt}
 			<p class="stayloggedin">
 				<label class="login"><input type="checkbox" name="{FormKeys::PERSIST_LOGIN}" value="true"
@@ -75,9 +78,9 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 
 <div id="login-links">
 	<p>
-		<a href="view-schedule.php">{translate key='ViewSchedule'}</a>
+{*		<a href="view-schedule.php">{translate key='ViewSchedule'}</a> *}
 		{if $ShowForgotPasswordPrompt}
-		|
+{*		| *}
 		<a href="forgot.php">{translate key='ForgotMyPassword'}</a>
 		{/if}
 	</p>

@@ -89,7 +89,7 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 		</p>
 
 <input type="hidden" {formname key=TIMEZONE} value="America/Sao_Paulo"/>
-<!--
+{*
 		<p>
 			<label class="reg">{translate key="Timezone"}<br/>
 				<select {formname key='TIMEZONE'} class="input" id="timezoneDropDown">
@@ -97,7 +97,7 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 				</select>
 			</label>
 		</p>
--->
+*}
 
 		<p style="display:none">
 			<label class="reg">{translate key="Language"}<br/>
@@ -114,21 +114,21 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 			{textbox name="PHONE" class="input" value="Phone" size="20"}
 			</label>
 		</p>
-<!--
+{*
 		<p>
 			<label class="reg">{translate key="Organization"}<br/>
 			{textbox name="ORGANIZATION" class="input" value="Organization" size="20"}
 			</label>
 		</p>
--->
+*}
 
-<!--
+{*
 		<p>
 			<label class="reg">{translate key="Position"}<br/>
 			{textbox name="POSITION" class="input" value="Position" size="20"}
 			</label>
 		</p>
--->
+*}
 	{if $Attributes|count > 0}
 		<div class="registrationHeader"><h3>{translate key=AdditionalAttributes}</h3></div>
 		{foreach from=$Attributes item=attribute}
