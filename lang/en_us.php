@@ -86,8 +86,8 @@ class en_us extends Language
         $strings['BackToCalendar'] = 'Back to calendar';
         $strings['BeginDate'] = 'Begin';
         $strings['EndDate'] = 'End';
-        $strings['Username'] = 'Username';
-        $strings['Password'] = 'Password';
+        $strings['Username'] = 'Usuário';
+        $strings['Password'] = 'Senha';
         $strings['PasswordConfirmation'] = 'Confirm Password';
         $strings['DefaultPage'] = 'Default Homepage';
         $strings['MyCalendar'] = 'My Calendar';
@@ -194,7 +194,7 @@ class en_us extends Language
         $strings['AllUsers'] = 'All Users';
         $strings['AllGroups'] = 'All Groups';
         $strings['AllSchedules'] = 'All Schedules';
-        $strings['UsernameOrEmail'] = 'Username or Email';
+        $strings['UsernameOrEmail'] = 'Usuário ou Email';
         $strings['Members'] = 'Members';
         $strings['QuickSlotCreation'] = 'Create slots every %s minutes between %s and %s';
         $strings['ApplyUpdatesTo'] = 'ApplyUpdatesTo';
@@ -217,7 +217,7 @@ class en_us extends Language
         $strings['InvalidPassword'] = 'Current password is incorrect';
         $strings['PasswordChangedSuccessfully'] = 'Your password has been changed successfully';
         $strings['SignedInAs'] = 'Signed in as';
-        $strings['NotSignedIn'] = 'You are not signed in';
+        $strings['NotSignedIn'] = 'Você não está logado';
         $strings['ReservationTitle'] = 'Title of reservation';
         $strings['ReservationDescription'] = 'Description of reservation';
         $strings['ResourceList'] = 'Resources to be reserved';
@@ -249,11 +249,11 @@ class en_us extends Language
         $strings['None'] = 'None';
         $strings['AddToOutlook'] = 'Add to Calendar';
         $strings['Done'] = 'Done';
-        $strings['RememberMe'] = 'Remember Me';
-        $strings['FirstTimeUser?'] = 'First Time User?';
-        $strings['CreateAnAccount'] = 'Create an Account';
+        $strings['RememberMe'] = 'Lembrar-se de Mim';
+        $strings['FirstTimeUser?'] = 'Usuário Novo?';
+        $strings['CreateAnAccount'] = 'Criar Uma Conta';
         $strings['ViewSchedule'] = 'View Schedule';
-        $strings['ForgotMyPassword'] = 'I Forgot My Password';
+        $strings['ForgotMyPassword'] = 'Esqueci Minha Senha';
         $strings['YouWillBeEmailedANewPassword'] = 'You will be emailed a new randomly generated password';
         $strings['Close'] = 'Close';
         $strings['ExportToCSV'] = 'Export to CSV';
@@ -449,7 +449,7 @@ class en_us extends Language
         // Page Titles
         $strings['CreateReservation'] = 'Create Reservation';
         $strings['EditReservation'] = 'Editing Reservation';
-        $strings['LogIn'] = 'Log In';
+        $strings['LogIn'] = 'Entrar';
         $strings['ManageReservations'] = 'Reservations';
         $strings['AwaitingActivation'] = 'Awaiting Activation';
         $strings['PendingApproval'] = 'Pending Approval';
